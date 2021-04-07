@@ -1,0 +1,93 @@
+###################################################################
+# Script Name	 : "PRINTER.CFG"                                                                                         
+# Description	 : Printer config file for Ender 3 Pro using Fysetc Cheetah V1.1b.
+# Args           :                                                                                           
+# Author       	 : Glenn Kerselaers                                             
+# Date           : "07 April 2021"                                     
+###################################################################
+
+# Machine definitions
+[include printer_1/machine.cfg]
+
+# BLTouch 
+[include printer_1/bltouch.cfg]
+
+# Calibration
+[include printer_1/calibration.cfg]
+
+# Macros 
+[include printer_1/macros.cfg]
+
+# Raspberry Pi 
+[include printer_1/rpi-mcu.cfg]
+
+# Moonraker
+[include printer_1/moonraker.conf]
+
+# Shell commands
+[include printer_1/shell_command.cfg]
+
+# Screen
+[include printer_1/screen.cfg]
+
+# Menu items
+[include generic/menu.cfg] 
+
+# Other
+[include generic/other.cfg]
+
+#*# <---------------------- SAVE_CONFIG ---------------------->
+#*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
+#*#
+#*# [extruder]
+#*# control = pid
+#*# pid_kp = 29.221
+#*# pid_ki = 2.164
+#*# pid_kd = 98.619
+#*#
+#*# [heater_bed]
+#*# control = pid
+#*# pid_kp = 72.050
+#*# pid_ki = 1.434
+#*# pid_kd = 905.124
+#*#
+#*# [bltouch]
+#*# z_offset = 1.750
+#*#
+#*# [bed_mesh default]
+#*# version = 1
+#*# points =
+#*# 	-0.050000, -0.075000, -0.035000, -0.002500, 0.072500
+#*# 	0.080000, 0.070000, 0.122500, 0.170000, 0.240000
+#*# 	0.117500, 0.110000, 0.185000, 0.227500, 0.320000
+#*# 	0.152500, 0.152500, 0.212500, 0.272500, 0.347500
+#*# 	0.172500, 0.140000, 0.190000, 0.227500, 0.365000
+#*# tension = 0.2
+#*# min_x = 32.0
+#*# algo = bicubic
+#*# y_count = 5
+#*# mesh_y_pps = 2
+#*# min_y = 32.0
+#*# x_count = 5
+#*# max_y = 203.0
+#*# mesh_x_pps = 2
+#*# max_x = 203.0
+#*#
+#*# [bed_mesh 105]
+#*# version = 1
+#*# points =
+#*# 	-0.050000, -0.075000, -0.035000, -0.002500, 0.072500
+#*# 	0.080000, 0.070000, 0.122500, 0.170000, 0.240000
+#*# 	0.117500, 0.110000, 0.185000, 0.227500, 0.320000
+#*# 	0.152500, 0.152500, 0.212500, 0.272500, 0.347500
+#*# 	0.172500, 0.140000, 0.190000, 0.227500, 0.365000
+#*# tension = 0.2
+#*# min_x = 32.0
+#*# algo = bicubic
+#*# y_count = 5
+#*# mesh_y_pps = 2
+#*# min_y = 32.0
+#*# x_count = 5
+#*# max_y = 203.0
+#*# mesh_x_pps = 2
+#*# max_x = 203.0
